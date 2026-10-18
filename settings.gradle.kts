@@ -1,4 +1,4 @@
-rootProject.name = "365score-patches"
+rootProject.name = "vibe-patches"
 
 pluginManagement {
     repositories {

@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>365Score Morphe Patches</h1>
+<h1>Vibe Patches</h1>
 
 Morphe patches for <strong>365Scores</strong><br>
 <em>(com.scores365 · v14.9.5+)</em>
@@ -11,13 +11,13 @@ Morphe patches for <strong>365Scores</strong><br>
 
 ### Morphe Manager
 
-[![Add to Morphe](https://img.shields.io/badge/Add%20to-Morphe-blue?logo=android&style=for-the-badge)](https://morphe.software/add-source?github=0xtalos/365score-patches)
+[![Add to Morphe](https://img.shields.io/badge/Add%20to-Morphe-blue?logo=android&style=for-the-badge)](https://morphe.software/add-source?github=0xtalos/vibe-patches)
 
-[**➕ Click here to add Patches to Morphe Manager**](https://morphe.software/add-source?github=0xtalos/365score-patches)
+[**➕ Click here to add Patches to Morphe Manager**](https://morphe.software/add-source?github=0xtalos/vibe-patches)
 
 Or in Morphe Manager (**Settings** / **Sources** ➔ **+**), enter:
-`https://github.com/0xtalos/365score-patches`
-*(or `https://raw.githubusercontent.com/0xtalos/365score-patches/main/patches-bundle.json`)*
+`https://github.com/0xtalos/vibe-patches`
+*(or `https://raw.githubusercontent.com/0xtalos/vibe-patches/main/patches-bundle.json`)*
 
 Then select 365Scores in Morphe Manager, select the APK/APKM, and tap Patch!
 

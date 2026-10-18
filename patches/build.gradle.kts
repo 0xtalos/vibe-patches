@@ -1,14 +1,14 @@
 group = "0xtalos"
-version = "1.4.1"
+version = "1.3.2"
 
 patches {
     about {
-        name = "365Score Patches"
-        description = "Morphe patches for 365Score"
-        source = "https://github.com/0xtalos/365score-patches"
+        name = "Vibe Patches"
+        description = "Morphe patches for 365Scores"
+        source = "https://github.com/0xtalos/vibe-patches"
         author = "0xtalos"
         contact = "na"
-        website = "https://github.com/0xtalos/365score-patches"
+        website = "https://github.com/0xtalos/vibe-patches"
         license = "GNU General Public License v3.0"
     }
 }
