@@ -35,3 +35,7 @@ apk-extracted/
 jadx-out/
 decompiled/
 
+# Ignore Morphe temporary files
+morphe-temporary-files/
+**/morphe-temporary-files/
+
