@@ -1,7 +1,7 @@
 {
   "version": "1.4.1",
   "created_at": "2026-10-19T01:55:00",
-  "description": "365Score Patches v1.4.1: Adds MX Player debloating, telemetry and ad SDK blocking, and a bypass for MX Player's native anti-tamper check that aborts patched builds.",
+  "description": "365Score Patches v1.4.1: Restores the 365Score-only patch set (the experimental MX Player patches have been removed).",
   "download_url": "https://github.com/0xtalos/365score-patches/releases/download/v1.4.1/patches-1.4.1.mpp",
   "page_url": "https://github.com/0xtalos/365score-patches"
 }

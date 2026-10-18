@@ -3,8 +3,8 @@ version = "1.4.1"
 
 patches {
     about {
-        name = "365Score & MX Player Patches"
-        description = "Morphe patches for 365Score and MX Player"
+        name = "365Score Patches"
+        description = "Morphe patches for 365Score"
         source = "https://github.com/0xtalos/365score-patches"
         author = "0xtalos"
         contact = "na"

@@ -1,38 +1,9 @@
 {
   "version": "v1.4.1",
   "appNames": {
-    "com.mxtech.videoplayer.ad": "MX Player",
     "com.scores365": "365Scores"
   },
   "patches": [
-    {
-      "name": "Block ad SDK loaders",
-      "description": "Prevents the Google Mobile Ads and Interactive Media Ads SDKs from loading any ad format in MX Player.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
     {
       "name": "Block update screen",
       "description": "Blocks the 'This app is out of date' update screen and popup on launch.",
@@ -60,60 +31,6 @@
       "options": []
     },
     {
-      "name": "Bypass DNS blocker check",
-      "description": "Disables private DNS / ad-blocker detection so video playback works seamlessly with AdGuard, NextDNS, and Pi-hole.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Bypass integrity check",
-      "description": "Neutralises MX Player's native anti-tamper check (libmx-bh.so), which otherwise aborts the process with 'std::terminate' shortly after launch on any patched build.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
       "name": "Change version code",
       "description": "Changes the version code of 365Score to prevent forced updates.",
       "use": true,
@@ -132,108 +49,6 @@
           "targets": [
             {
               "version": "14.9.5",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Debloat MX Player",
-      "description": "Hides the cleaner, file transfer, local network, local music and bottom promotion features from MX Player.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": [
-        {
-          "key": "mx_debloat_cleaner",
-          "title": "Remove cleaner",
-          "description": "Hides the storage cleaner card in the media manager.",
-          "required": false,
-          "type": "kotlin.Boolean",
-          "default": true,
-          "values": null
-        },
-        {
-          "key": "mx_debloat_file_transfer",
-          "title": "Remove file transfer",
-          "description": "Hides the file transfer entry of the navigation drawer.",
-          "required": false,
-          "type": "kotlin.Boolean",
-          "default": true,
-          "values": null
-        },
-        {
-          "key": "mx_debloat_local_network",
-          "title": "Remove local network",
-          "description": "Hides the local network streaming entry of the navigation drawer.",
-          "required": false,
-          "type": "kotlin.Boolean",
-          "default": true,
-          "values": null
-        },
-        {
-          "key": "mx_debloat_music_row",
-          "title": "Remove local music row",
-          "description": "Hides the local music entry of the navigation drawer.",
-          "required": false,
-          "type": "kotlin.Boolean",
-          "default": true,
-          "values": null
-        },
-        {
-          "key": "mx_debloat_promotions",
-          "title": "Remove bottom promotions",
-          "description": "Stops MX Player from showing bottom navigation promotion cards.",
-          "required": false,
-          "type": "kotlin.Boolean",
-          "default": true,
-          "values": null
-        }
-      ]
-    },
-    {
-      "name": "Disable ads",
-      "description": "Removes banner, native, interstitial, exit, and app-open advertisements from MX Player.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
               "experimental": false
             }
           ]
@@ -294,34 +109,6 @@
       "options": []
     },
     {
-      "name": "Disable telemetry",
-      "description": "Stops MX Player from reporting usage, screens, sessions and playback events to its own tracker, Firebase Analytics and AppsFlyer.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
       "name": "MicroG integration",
       "description": "Allows Google Sign-In and account sync to work on non-rooted devices by redirecting Google Play Services to ReVanced GmsCore / MicroG.",
       "use": false,
@@ -342,34 +129,6 @@
           "targets": [
             {
               "version": "14.9.5",
-              "experimental": false
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Unlock Ad-Free mode",
-      "description": "Unlocks Ad-Free VIP status and enables skipping online video ads in MX Player.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.mxtech.videoplayer.ad": [
-          "3.3.1"
-        ]
-      },
-      "compatibility": [
-        {
-          "name": "MX Player",
-          "packageName": "com.mxtech.videoplayer.ad",
-          "description": null,
-          "appIconColor": null,
-          "targets": [
-            {
-              "version": "3.3.1",
               "experimental": false
             }
           ]

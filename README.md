@@ -36,18 +36,6 @@ Then select 365Scores in Morphe Manager, select the APK/APKM, and tap Patch!
 | **Block update screen** | Blocks the "This app is out of date" update prompt on launch |
 | **Change version code** | Changes version code to prevent Play Store from overwriting the app |
 
-### 🎬 MX Player (`com.mxtech.videoplayer.ad` · v3.3.1)
-
-| 💊 Patch | 📜 Description |
-|----------|----------------|
-| **Disable ads** | Removes banner, native, interstitial, exit, and app-open advertisements |
-| **Block ad SDK loaders** | Stops the Google Mobile Ads and Interactive Media Ads SDKs from loading any ad format |
-| **Debloat MX Player** | Hides the cleaner, file transfer, local network, local music and bottom promotion features |
-| **Disable telemetry** | Stops reporting to MX Player's own tracker, Firebase Analytics and AppsFlyer |
-| **Bypass DNS blocker check** | Disables private DNS / ad-blocker detection so video playback works seamlessly with AdGuard, NextDNS, and Pi-hole |
-| **Unlock Ad-Free mode** | Unlocks Ad-Free VIP status and enables skipping online video ads |
-| **Bypass integrity check** | Neutralises MX Player's native anti-tamper check (`libmx-bh.so`) that aborts any dex-modified build with `std::terminate` — required for the other MX Player patches to run |
-
 ---
 
 ## 🔧 Development
