@@ -11,7 +11,9 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -23,6 +25,14 @@
           "targets": [
             {
               "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
               "experimental": false
             }
           ]
@@ -37,7 +47,9 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -49,6 +61,14 @@
           "targets": [
             {
               "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
               "experimental": false
             }
           ]
@@ -63,7 +83,9 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -75,6 +97,14 @@
           "targets": [
             {
               "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
               "experimental": false
             }
           ]
@@ -89,7 +119,9 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -102,6 +134,14 @@
             {
               "version": "14.9.5",
               "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
+              "experimental": false
             }
           ]
         }
@@ -113,11 +153,14 @@
       "description": "Allows Google Sign-In and account sync to work on non-rooted devices by redirecting Google Play Services to ReVanced GmsCore / MicroG.",
       "use": false,
       "dependencies": [
-        "ResourcePatch"
+        "ResourcePatch",
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -129,6 +172,50 @@
           "targets": [
             {
               "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
+              "experimental": false
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Spoof signature",
+      "description": "Makes the app report its original signing certificate to itself, so Firebase and Google APIs restricted to the original app keep working.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.scores365": [
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
+        ]
+      },
+      "compatibility": [
+        {
+          "name": "365Scores",
+          "packageName": "com.scores365",
+          "description": null,
+          "appIconColor": null,
+          "targets": [
+            {
+              "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
               "experimental": false
             }
           ]
@@ -143,7 +230,9 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5"
+          "14.9.5",
+          "14.9.6",
+          "14.9.7"
         ]
       },
       "compatibility": [
@@ -155,6 +244,14 @@
           "targets": [
             {
               "version": "14.9.5",
+              "experimental": false
+            },
+            {
+              "version": "14.9.6",
+              "experimental": false
+            },
+            {
+              "version": "14.9.7",
               "experimental": false
             }
           ]

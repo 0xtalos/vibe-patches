@@ -14,6 +14,10 @@ val COMPATIBILITY_365SCORE = arrayOf(
     Compatibility(
         name = "365Scores",
         packageName = PACKAGE_365SCORE,
-        targets = listOf(AppTarget("14.9.5")),
+        targets = listOf(
+            AppTarget("14.9.5"),
+            AppTarget("14.9.6"),
+            AppTarget("14.9.7"),
+        ),
     ),
 )
