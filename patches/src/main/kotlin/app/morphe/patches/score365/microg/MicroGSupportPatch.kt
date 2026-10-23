@@ -7,6 +7,7 @@ import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.resourcePatch
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
@@ -21,9 +22,15 @@ import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableStringReference
 import org.w3c.dom.Element
 
+private val GMS_CORE_QUERY_PACKAGES = listOf(
+    MicroGConstants.GMS_CORE_PACKAGE_NAME,
+    "com.mgoogle.android.gms",
+    "org.microg.gms",
+)
+
 /**
  * Manifest modifications for MicroG / ReVanced GmsCore support:
- * 1. Declares GmsCore in <queries> for Android 11+ package visibility.
+ * 1. Declares all GmsCore/MicroG packages in <queries> for Android 11+ package visibility.
  * 2. Spoofs genuine package name and signing certificate for GmsCore.
  * 3. Redirects C2DM push permissions to ReVanced GmsCore.
  */
@@ -32,7 +39,7 @@ val microGResourcePatch = resourcePatch {
         document("AndroidManifest.xml").use { document ->
             val manifestNode = document.documentElement
 
-            // 1. Ensure <queries> tag exists and declares GmsCore package (critical for Android 11+ / API 30+ package visibility)
+            // 1. Ensure <queries> tag exists and declares all GmsCore / MicroG variants
             val queriesNodes = document.getElementsByTagName("queries")
             val queriesElement = if (queriesNodes.length > 0) {
                 queriesNodes.item(0) as Element
@@ -41,9 +48,17 @@ val microGResourcePatch = resourcePatch {
                 manifestNode.appendChild(newQueries)
                 newQueries
             }
-            val pkgElement = document.createElement("package")
-            pkgElement.setAttribute("android:name", MicroGConstants.GMS_CORE_PACKAGE_NAME)
-            queriesElement.appendChild(pkgElement)
+            val existing = buildSet {
+                val packages = queriesElement.getElementsByTagName("package")
+                for (i in 0 until packages.length) {
+                    (packages.item(i) as? Element)?.getAttribute("android:name")?.let(::add)
+                }
+            }
+            GMS_CORE_QUERY_PACKAGES.filter { it !in existing }.forEach { packageName ->
+                val pkgElement = document.createElement("package")
+                pkgElement.setAttribute("android:name", packageName)
+                queriesElement.appendChild(pkgElement)
+            }
 
             // 2. Add spoofing metadata
             val application = document.getElementsByTagName("application").item(0) as? Element
@@ -231,8 +246,8 @@ private fun BytecodePatchContext.rewriteGmsStrings() {
  */
 @Suppress("unused")
 val microGSupportPatch = bytecodePatch(
-    name = "MicroG integration",
-    description = "Allows Google Sign-In and account sync to work on non-rooted devices by redirecting Google Play Services to ReVanced GmsCore / MicroG.",
+    name = "GmsCore support",
+    description = "Makes Google sign-in and Google APIs work in the patched app by using MicroG RE instead of Google Play services. Requires MicroG RE to be installed.",
     default = false,
 ) {
     compatibleWith(*COMPATIBILITY_365SCORE)
