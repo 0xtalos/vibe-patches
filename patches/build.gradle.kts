@@ -1,5 +1,5 @@
 group = "0xtalos"
-version = "1.3.2"
+version = "1.3.3"
 
 patches {
     about {
