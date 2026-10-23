@@ -16,9 +16,6 @@ patches {
 dependencies {
     compileOnly("com.github.REAndroid:ARSCLib:a28c6fb2a7")
     compileOnly(libs.morphe.patcher)
-    implementation(libs.morphe.patches.library)
-
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
 
     // Used by JsonGenerator.
     implementation(libs.gson)
