@@ -11,8 +11,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -21,16 +19,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -47,8 +37,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -57,16 +45,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -83,8 +63,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -93,16 +71,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -119,8 +89,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -129,16 +97,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -158,8 +118,6 @@
       ],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -168,16 +126,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -194,8 +144,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -204,16 +152,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
@@ -230,8 +170,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.scores365": [
-          "14.9.5",
-          "14.9.6",
           "14.9.7"
         ]
       },
@@ -240,16 +178,8 @@
           "name": "365Scores",
           "packageName": "com.scores365",
           "description": null,
-          "appIconColor": null,
+          "appIconColor": 16761095,
           "targets": [
-            {
-              "version": "14.9.5",
-              "experimental": false
-            },
-            {
-              "version": "14.9.6",
-              "experimental": false
-            },
             {
               "version": "14.9.7",
               "experimental": false
